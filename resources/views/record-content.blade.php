@@ -2,7 +2,7 @@
 @isset($record['title'])
     <div class="card-header">
         <div class="card-title">
-            <h5>{!! $record['title'] !!}</h5>
+            <span class="fs-6">{!! $record['title'] !!}</span>
         </div>
     </div>
 @endisset
