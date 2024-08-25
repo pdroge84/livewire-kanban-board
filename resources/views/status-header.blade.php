@@ -1,4 +1,4 @@
 {{-- Injected variables $status, $styles --}}
 <div class="{{ $styles['statusHeader'] }}">
-    {{ $status['title'] }}
+    @lang($status['title'])
 </div>
