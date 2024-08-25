@@ -1,7 +1,7 @@
 {{-- Injected variables $record, $styles --}}
 @isset($record['title'])
-    <div class="card-header p-0 pe-5 pb-3">
-        <div class="card-title">
+    <div class="card-header p-0 pb-2" @isset($record['ribbon']) style="padding-right: 90px !important;"  @endisset>
+        <div class="card-title fs-6">
             {!! $record['title'] !!}
         </div>
     </div>
