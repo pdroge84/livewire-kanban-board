@@ -1,16 +1,18 @@
 {{-- Injected variables $record, $styles --}}
 @isset($record['title'])
-<p>
-    {!! $record['title'] !!}
-</p>
+    <div class="card-header p-0 pe-5 pb-3">
+        <div class="card-title">
+            {!! $record['title'] !!}
+        </div>
+    </div>
 @endisset
 @isset($record['content'])
-<p>
-    {!! $record['content'] !!}
-</p>
+    <div class="card-body px-0 py-1 ">
+        {!! $record['content'] !!}
+    </div>
 @endisset
 @isset($record['footer'])
-<p>
-    {!! $record['footer'] !!}
-</p>
+    <div class="card-footer px-0 py-1 ">
+        {!! $record['footer'] !!}
+    </div>
 @endisset
