@@ -4,12 +4,12 @@
     {!! $record['title'] !!}
 </p>
 @endisset
-@isset($record['title'])
+@isset($record['content'])
 <p>
     {!! $record['content'] !!}
 </p>
 @endisset
-@isset($record['title'])
+@isset($record['footer'])
 <p>
     {!! $record['footer'] !!}
 </p>
