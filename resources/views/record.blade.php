@@ -5,7 +5,7 @@
     class="{{ $styles['record'] }}">
 
     @isset($record['ribbon'])
-        <div class="ribbon ribbon-{{ $record['ribbon'] ?? 'info' }} ribbon-shape">{!! $record['ribbon'] !!}</div>
+        <div class="ribbon ribbon-{{ strtolower($record['ribbon']) ?? 'info' }} ribbon-shape">{!! $record['ribbon'] !!}</div>
     @endisset
     @include($recordContentView, [
         'record' => $record,
